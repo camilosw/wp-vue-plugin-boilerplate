@@ -10,7 +10,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.6.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -19,22 +19,22 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "css-loader": "^1.0.0",
-    "eslint": "^5.6.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.13.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "vue-loader": "^15.4.2",
+    "vue-loader": "^15.6.2",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.1",
-    "webpack-merge": "^4.1.4"
+    "vue-template-compiler": "^2.6.6",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1"
   }
 }

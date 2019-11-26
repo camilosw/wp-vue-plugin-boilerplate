@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'eval-source-map',
   plugins: [
     new BrowserSyncPlugin({
-      proxy: 'http://wordpress.localhost:8888',
+      proxy: 'http://localhost:8888/wordpress/rexer/',
       files: [
         './**/*.php',
         './src-js/*'

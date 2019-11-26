@@ -1,13 +1,12 @@
 import Vue from 'vue'
-
-import SimpleExample from './SimpleExample.vue'
+import ComponentRexer from './ComponentsEvents.vue'
 
 // Allow multiple Vue apps in the same page
-const appElements = document.querySelectorAll('.vue-simple-example')
+const appElements = document.querySelectorAll('.rexer-events')
 Array.from(appElements).forEach(element => {
   /* eslint-disable no-new */
   new Vue({
     el: element,
-    render: h => h(SimpleExample)
+    render: h => h(ComponentRexer)
   })
 })

@@ -3,8 +3,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: {
-    'simple-example': './src-js/simple-example.js',
-    'components-example': './src-js/components-example.js'
+    'events-rexer': './src-js/components-events.js'
   },
   output: {
     path: path.resolve(__dirname, 'public/js'),

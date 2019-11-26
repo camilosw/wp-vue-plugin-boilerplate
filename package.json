@@ -17,7 +17,7 @@
     "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^1.0.1",
     "eslint": "^5.13.0",

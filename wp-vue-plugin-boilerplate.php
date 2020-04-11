@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:  Rexer Events
+Plugin Name:  Plugin Name
 Plugin URI:   
 Description:  Display Rexer Events
 Version:      0.1
@@ -16,17 +16,17 @@ Domain Path:  /languages
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 // TODO: replace PLUGIN_NAME with yours
-define( 'REXER_EVENTS_FILE', __FILE__ );
-define( 'REXER_EVENTS_VERSION', '0.1.0.0' );
+define( 'PLUGIN_NAME_FILE', __FILE__ );
+define( 'PLUGIN_NAME_VERSION', '0.1.0.0' );
 
-require plugin_dir_path( REXER_EVENTS_FILE ) . 'includes/shortcodes.php';
+require plugin_dir_path( PLUGIN_NAME_FILE ) . 'includes/shortcodes.php';
 
 add_action( 'wp_enqueue_scripts', function() {
   wp_register_script(
     'rexer-components',
-    plugin_dir_url( REXER_EVENTS_FILE ) . 'public/js/events-rexer.js',
+    plugin_dir_url( PLUGIN_NAME_FILE ) . 'public/js/events-rexer.js',
     array(),
-    REXER_EVENTS_VERSION,
+    PLUGIN_NAME_VERSION,
     true
   );
 } );

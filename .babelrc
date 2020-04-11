@@ -8,8 +8,12 @@
           "not dead",
           "not ie <= 11",
           "not op_mini all"
-        ]
-      }
-    }]
+        ],
+        "node": "current"
+      },
+      "useBuiltIns": true,
+      "debug": true
+    }],
+    [ "es2015", "stage-0"]
   ]
 }

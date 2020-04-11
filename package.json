@@ -1,13 +1,18 @@
 {
   "name": "wp-vue-plugin-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A WordPress plugin boilerplate with Vue.js",
-  "author": "Camilo Mejia",
-  "homepage": "https://github.com/camilosw/wp-vue-plugin-boilerplate",
+  "author": "",
+  "homepage": "",
   "license": "MIT",
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "clean": "rimraf dist/*",
+    "cpxpublic": "cpx \"public/**/*.*\" \"dist\/public\" -C",
+    "cpxinclude": "cpx \"includes/**/*.*\" \"dist\/includes\" -C",
+    "preserve": "cpx \"*{wp-vue-plugin-boilerplate.php,README.md}\" \"dist\" -C",
+    "deploy": "yarn run cpxpublic && yarn run cpxinclude && yarn run preserve"
   },
   "dependencies": {
     "vue": "^2.6.6"
@@ -19,6 +24,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
+    "cpx": "^1.5.0",
     "css-loader": "^1.0.1",
     "eslint": "^5.13.0",
     "eslint-config-standard": "^12.0.0",
@@ -29,6 +35,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "node-sass": "^4.11.0",
+    "rimraf": "^3.0.2",
     "sass-loader": "^7.1.0",
     "vue-loader": "^15.6.2",
     "vue-style-loader": "^4.1.2",

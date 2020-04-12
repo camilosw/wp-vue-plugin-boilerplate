@@ -1,17 +1,17 @@
 <template>
   <div class="">
-    <content-component :events="events" />
+    <!-- <content-component :events="events" /> -->
   </div>
 </template>
 
 <script>
 
-import ContentComponent from './components/Content.vue'
+// import ContentComponent from './components/Content.vue'
 
 export default {
   name: 'ComponentsExample',
   components: {
-    ContentComponent
+    // ContentComponent
   },
   data () {
     return {

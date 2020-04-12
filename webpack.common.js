@@ -1,9 +1,13 @@
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const buildImgPath = 'wp-content/plugins/zeit-network/public'
 
 module.exports = {
+  // ----
+  // 'shortcode-example must be same with shortcode defined in php file
+  // ----
   entry: {
-    'events-rexer': './src-js/components-events.js'
+    'shortcode-example': './src-js/components-view.js'
   },
   output: {
     path: path.resolve(__dirname, 'public/js'),
@@ -42,6 +46,20 @@ module.exports = {
           'vue-style-loader',
           'css-loader',
           'sass-loader'
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10240,
+              name: 'img/[name].[hash:7].[ext]',
+              outputPath: '../assets',
+              publicPath: buildImgPath + '/assets'
+            }
+          }
         ]
       }
     ]

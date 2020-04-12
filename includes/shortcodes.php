@@ -3,8 +3,20 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-add_shortcode( 'events_rexer', function() {
-  wp_enqueue_script( 'rexer-components' );
+// Shortcode: [shortcode-example attr="sample"]
 
-  return '<div class="rexer-events"></div>';
+
+add_shortcode( 'shortcode-example', function($args=[]) {
+  $atts = esc_attr(isset($args['attr']) ? $args['attr'] : '');
+  wp_enqueue_script( 'shortcode-example' );
+  $str= "<div class='shortcode-example' data-atts='{$atts}'></div>";
+  return $str;
 } );
+
+/* function my_js_variables(){ ?>
+//   <script type="text/javascript">
+//     var networks = <?php echo json_encode(CFS()->get( 'locations' )); ?>;
+//   </script> <?php
+// };
+// add_action ( 'wp_head', 'my_js_variables' );
+*/

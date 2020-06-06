@@ -24,7 +24,7 @@ require plugin_dir_path( PLUGIN_NAME_FILE ) . 'includes/shortcodes.php';
 
 add_action( 'wp_enqueue_scripts', function() {
   wp_register_script(
-    SCRIPT_NAME,
+    PLUGIN_NAME_SHORTCODE,
     plugin_dir_url( PLUGIN_NAME_FILE ) . 'public/js/'.(PLUGIN_NAME_SHORTCODE).'.js',
     array(),
     PLUGIN_NAME_VERSION,
